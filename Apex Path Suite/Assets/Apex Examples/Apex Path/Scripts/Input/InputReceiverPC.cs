@@ -28,9 +28,9 @@ namespace Apex.Examples.Input
             }
 
             if (Application.platform != RuntimePlatform.WindowsPlayer &&
-#if !(UNITY_5_4 || UNITY_5_5 || UNITY_5_6 || UNITY_2017)
-                Application.platform != RuntimePlatform.WindowsWebPlayer &&
-#endif
+//#if !(UNITY_5_4 || UNITY_5_5 || UNITY_5_6 || UNITY_2017)
+//                Application.platform != RuntimePlatform.WindowsWebPlayer &&
+//#endif
                 Application.platform != RuntimePlatform.WindowsEditor)
             {
                 Debug.LogWarning("The InputReceiverPC only works on Windows.");
